@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title>Calculator</title>
+    <link rel="stylesheet" href="css/styles.css">
+    <link rel="shortcut icon" href="images/favicon.ico">
+  </head>
+  <body>
+    <div class="main">
+      <h1>MY CALCULATOR</h1>
+      <div class="container">
+        <input type="text" id="useinp" placeholder="0" disabled />
+        <input type="text" id="compout" placeholder="0" disabled />
+        <table>
+          <tr>
+            <td onclick="calcad('(')">(</td>
+            <td onclick="calcad(')')">)</td>
+            <td onclick="removeLast()"><img src="images/backspace.png" class="image"></td>
+            <td onclick="calcad('+')" class="vari">+</td>
+          </tr>
+          <tr>
+            <td onclick="calcad('7')">7</td>
+            <td onclick="calcad('8')">8</td>
+            <td onclick="calcad('9')">9</td>
+            <td onclick="calcad('-')" class="vari">-</td>
+          </tr>
+          <tr>
+            <td onclick="calcad('4')">4</td>
+            <td onclick="calcad('5')">5</td>
+            <td onclick="calcad('6')">6</td>
+            <td onclick="calcad('*')" class="vari">*</td>
+          </tr>
+          <tr>
+            <td onclick="calcad('1')">1</td>
+            <td onclick="calcad('2')">2</td>
+            <td onclick="calcad('3')">3</td>
+            <td onclick="calcad('/')" class="vari">/</td>
+          </tr>
+          <tr>
+            <td onclick="reset()">C</td>
+            <td onclick="calcad('0')">0</td>
+            <td onclick="calcad('.')">.</td>
+            <td class="eqlbtn" onclick="msg()">=</td>
+          </tr>
+        </table>
+
+      </div>
+    </div>
+
+    <script src="js/working.js">
+
+    </script>
+  </body>
+</html>
